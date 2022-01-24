@@ -14,33 +14,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-  
+
 </head>
 
 <body>
 
   <div class="container">
-    <div class="col-6 ">
-      <img src="img/login.svg" alt="Entrar no Sistema" class="">
-    </div>
     <div class="col-6">
-      <div class="form-login">
-        <h2>Faça o Login!</h2>
-        <form>
-          <div class="form-line">
-            <input type="email" class="" id="email" name="email" placeholder="Digite seu email">
-            <label for="email" class="">Digite seu email</label>
-          </div>
-          <div class="form-line">
-            <input type="password" class="" id="password" name="password" placeholder="Digite sua senha">
-            <label for="password" class="">Digite sua senha</label>
-          </div>
-          <input type="submit" class="btn-submit" value="Entrar">
-          <div class="">
-            <a href="register.html">Ainda não tenho uma conta</a>
-          </div>
-        </form>
+      <img src="img/login.svg" alt="Entrar no Sistema" class="imagem-login">
+    </div>
+    <div class="col-6 form-login-geral">
+      <h2>Faça o Login!</h2>
+      <div class="form-line">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+        <label for="email" class="form-label">Digite seu email</label>
       </div>
+      <div class="form-line">
+        <input type="password" class="" id="password" name="password" placeholder="Digite sua senha">
+        <label for="password" class="form-label">Digite sua senha</label>
+      </div>
+      <input type="submit" class="btn-submit" value="Entrar">
+      <div class="link-container">
+        <a href="register.html">Ainda não tenho uma conta</a>
+      </div>
+
     </div>
 
   </div>

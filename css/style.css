@@ -1,41 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: black;
 }
 
 .container {
-    background-color: #fff;
-    width: 1100px;
-    height: auto;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     border-radius: 20px;
-    box-shadow: .5px 10px 15px rgba(0, 0, 0, .2);
-    margin: 50px auto;
+    background: inherit;
+    overflow: hidden;
+    z-index: 1;
     display: flex;
+    flex-direction: row;
 }
 
 .container .col-6 {
-    width: 548px;
+    width: 50%;
 }
 
 .container .col-6 img {
     max-width: 100%;
+    padding: 60px 0 60px 30px;
 }
 
-.form-login {
-    padding: 40px;
+.form-login-geral {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    padding: 50px 30px;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+
+
 }
 
-.form-login h2 {
+.form-login-geral h2 {
     padding-top: 30px;
-    font-weight: 700px;
+    font-weight: 900;
+    font-size: calc(1.325rem + .9vw);
 }
+
+
+.btn-submit {
+    border-radius: 10px;
+    max-width: 20%;
+    padding: 10px 20px;
+    background-color: chartreuse;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #4db44d;
+}
+
+.link-container {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.link-container a {
+    text-align: right;
+    color: #222;
+    text-decoration: none;
+    padding-right: 70px;
+}
+
+.link-container a:hover{
+    color: chartreuse;
+}
+
+
 
 .form-line {
     display: flex;
     flex-flow: column-reverse;
     margin-bottom: 1em;
-    color: #ccc;  
+    color: #ccc;
 }
+
 
 label, input {
     transition: all 0.2s;
@@ -47,20 +104,16 @@ input {
     font-weight: 16px;
     border: 0;
     border-bottom: 1px solid #ccc;
-    font-family: inherit;   
+    font-family: inherit;
     border-radius: 0;
     padding: 0;
     cursor: text;
+    width: 90%;
 }
 
 input:focus {
     outline: 0;
     border-bottom: 1px solid #666;
-}
-
-label {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 }
 
 input:placeholder-shown+label {
@@ -71,6 +124,9 @@ input:placeholder-shown+label {
     text-overflow: ellipsis;
     transform-origin: left bottom;
     transform: translate(0, 2.125rem) scale(1.5);
+    color: #CCC;
+    padding: 10px;
+    font-size: 14px;
 }
 
 ::-webkit-input-placeholder {
@@ -82,43 +138,5 @@ input:not(:placeholder-shown)+label,
 input:focus+label {
     transform: translate(0, 0) scale(1);
     cursor: pointer;
+    color: #222;
 }
-
-/*
-
-.form-line{
-    width:90vw;
-    max-width:400px;
-    border: none;   
-    display:flex;
-    flex-direction:column;  
-    margin-bottom: 1px;
-    color: #ccc;
-}
-
-.form-line label{
-    margin-bottom:15px;
-    padding-bottom: 10px;
-    position:relative;
-    border-bottom:1px solid #ddd;
-}
-.form-line input{
-    width:100%;
-    padding:10px 0px;
-    margin-top:20px;
-    border:none;
-    outline:none;
-}
-.form-line input::placeholder{
-    opacity:0;
-}
-
-.btn-submit{
-    padding:15px 0px; 
-    margin-top:20px;
-    background:purple;
-    color:#fff;
-    border:1px solid purple;
-    cursor:pointer;
-    border-radius:3px;
-}*/

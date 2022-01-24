@@ -1,1 +1,1 @@
-Criando uma tela de Login e tela de registro apenas com CSS e HTML
+Criando uma tela de Login apenas com CSS e HTML
